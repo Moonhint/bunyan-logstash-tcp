@@ -1,8 +1,5 @@
 # Logstash TCP stream for Bunyan
 
-[![CircleCI](https://circleci.com/gh/transcovo/bunyanlogstashtcp.svg?style=shield)](https://circleci.com/gh/transcovo/bunyanlogstashtcp)
-[![codecov](https://codecov.io/gh/transcovo/bunyanlogstashtcp/branch/master/graph/badge.svg)](https://codecov.io/gh/transcovo/bunyanlogstashtcp)
-
 A tcp logger for [Logstash](http://logstash.net/docs/1.4.2/inputs/tcp)
 
 ## Configuration options
