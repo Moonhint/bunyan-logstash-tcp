@@ -165,6 +165,7 @@ LogstashStream.prototype.connect = function connect() {
 
   this.socket.on('connect', () => {
     self.retries = 0;
+    self.connected = true;
     self.emit('connect');
   });
 
