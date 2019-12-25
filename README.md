@@ -1,7 +1,7 @@
 # Logstash TCP stream for Bunyan
 
-[![CircleCI](https://circleci.com/gh/transcovo/bunyan-logstash-tcp.svg?style=shield)](https://circleci.com/gh/transcovo/bunyan-logstash-tcp)
-[![codecov](https://codecov.io/gh/transcovo/bunyan-logstash-tcp/branch/master/graph/badge.svg)](https://codecov.io/gh/transcovo/bunyan-logstash-tcp)
+[![CircleCI](https://circleci.com/gh/transcovo/bunyanlogstashtcp.svg?style=shield)](https://circleci.com/gh/transcovo/bunyanlogstashtcp)
+[![codecov](https://codecov.io/gh/transcovo/bunyanlogstashtcp/branch/master/graph/badge.svg)](https://codecov.io/gh/transcovo/bunyanlogstashtcp)
 
 A tcp logger for [Logstash](http://logstash.net/docs/1.4.2/inputs/tcp)
 
@@ -23,7 +23,7 @@ var log = bunyan.createLogger({
   streams: [
     {
       type: "raw",
-      stream: require('bunyan-logstash-tcp').createStream({
+      stream: require('bunyanlogstashtcp').createStream({
         host: '127.0.0.1',
         port: 9908
       })
@@ -38,7 +38,7 @@ var log = bunyan.createLogger({
 "use strict";
 
 var bunyan = require('bunyan'),
-    bunyantcp = require('bunyan-logstash-tcp');
+    bunyantcp = require('bunyanlogstashtcp');
 
 var log = bunyan.createLogger({
     name: 'example',
@@ -111,7 +111,7 @@ Thanks to
 
 - [sheknows](https://github.com/sheknows)
 - [jaakkos](https://github.com/jaakkos) 
-- [Chris Rock](https://github.com/chris-rock/bunyan-logstash-tcp)
+- [Chris Rock](https://github.com/chris-rock/bunyanlogstashtcp)
 
 for their amazing work
 
