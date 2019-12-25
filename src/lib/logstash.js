@@ -153,7 +153,7 @@ LogstashStream.prototype.connect = function connect() {
     self.connected = false;
     self.socket.destroy();
     self.socket = null;
-    self.emit('error', err);
+    // self.emit('error', err);
   });
 
   this.socket.on('timeout', () => {
